@@ -1,0 +1,26 @@
+img{
+  display: inline;
+}
+.small-image {
+  height: 200px;
+  width: 200px;
+}
+
+.large-image {
+  height: 400px;
+  width: 400px;
+}
+
+  .img-thumbnails {
+    display: inline-block;
+    height: 400px;
+    width: 100vw;
+}
+
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}

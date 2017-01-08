@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="store">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Gem Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="products.js"></script>
+</head>
+
+<!-- This begins the grop of items -->
+<body class="list-group" ng-controller="StoreController as store">
+  <div class="container-fluid text-center">
+
+    <div class="list-group-item text-center" ng-repeat="product in store.products">
+        <!-- BETTER TO DO THIS WITH A DIRECTIVE THAN INCLUDE<h3 ng-include="'product-title.html'"></h3> -->
+        <product-title></product-title>
+
+        <product-gallery></product-gallery>
+
+        <product-panels></product-panels>
+
+      </div>
+    </div> <!-- End container-fluid -->
+  </body>
+
+</html>
