@@ -2,18 +2,15 @@ img{
   display: inline;
 }
 .small-image {
-  height: 200px;
-  width: 200px;
+  width: 15vw;
 }
 
 .large-image {
-  height: 400px;
-  width: 400px;
+  width: 25vw;
 }
 
   .img-thumbnails {
     display: inline-block;
-    height: 400px;
     width: 100vw;
 }
 

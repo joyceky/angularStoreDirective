@@ -1,10 +1,10 @@
 <div class="gallery">
-      <div class="img-wrap">
-          <img class="large-image" ng-src="{{ product.images[0] }}" ng-show="{{ product.images.length }}" />
-      </div>
-      <ul class="img-thumbnails cleafix" ng-show="{{ product.images.length }}">
-          <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
-              <img ng-src="{{ image }}" />
-          </li>
-      </ul>
+    <div class="img-wrap">
+        <img class="large-image" ng-src="{{ product.images[0] }}" ng-show="{{ product.images.length }}" />
+    </div>
+    <ul class="img-thumbnails cleafix" ng-show="{{ product.images.length }}">
+        <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+            <img ng-src="{{ image }}" />
+        </li>
+    </ul>
 </div>

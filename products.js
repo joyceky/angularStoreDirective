@@ -12,15 +12,6 @@
         };
     });
 
-    // // Attribute directive
-    // app.directive('productTitle', function(){
-    //   // This is the directive definition object
-    //   return{
-    //     restrict: 'A',
-    //     templateUrl: 'product-title.html'
-    //   };
-    // });
-
     app.directive('productPanels', function() {
 
         return {
@@ -41,12 +32,13 @@
         };
     });
 
+    // Attribute directive, all others are element directives
     app.directive("productSpecs", function() {
       return {
         restrict:"A",
         templateUrl: "product-specs.html"
       };
-    }); 
+    });
 
     app.directive('productGallery', function() {
         return {

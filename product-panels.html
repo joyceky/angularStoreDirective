@@ -32,6 +32,7 @@
       <form name="reviewForm" ng-controller="ReviewController as reviewCtrl"
           ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
         <blockquote>
+          <!-- This is the review preview -->
           <b> {{"Stars: " + reviewCtrl.review.stars}} </b>
           {{reviewCtrl.review.body}}
           <cite>by: {{reviewCtrl.review.author}}</cite>
